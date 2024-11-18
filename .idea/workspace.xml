@@ -5,18 +5,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d3ae6e8f-616f-4210-a302-d1d7a558599d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/components/logic/OperationResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/components/operations/AddOperation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/components/operations/DivideOperation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/components/operations/EqualsOperation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/components/operations/MultiplyOperation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/components/operations/Operation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/components/operations/SubtractOperation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/components/units/Operation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/components/units/Unit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/exceptions/NoOperationResultException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/components/Accumulator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/components/Accumulator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/components/AddressUnit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/components/AddressUnit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/components/ConrolUnit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/components/ConrolUnit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/components/InstructionCounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/components/InstructionCounter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/components/Memory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/components/Memory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/components/Register.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/components/Register.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/components/RegisterFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/components/RegisterFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/components/Status.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/components/Status.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/components/logic/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/components/logic/Command.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/components/logic/Operator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/components/logic/Operator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/components/units/ArithmeticUnit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/components/units/ArithmeticUnit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/components/units/ComparisonUnit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/components/units/ComparisonUnit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/components/units/LogicalUnit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/components/units/LogicalUnit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/components/units/ShifterUnit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/components/units/ShifterUnit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/components/units/Unit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/concept.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/concept.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/guidelines.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guidelines.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,25 +48,92 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="cpu-sim" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
-}]]></component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/java/Main.java" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2p1fUWEjKzqttiwxbgIdZh41cEo" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.Main.executor": "Run",
+    "Gradle.Build cpu-sim.executor": "Run",
+    "Gradle.cpu-sim [:Main.main()].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "external.system.has.shared.sources": "true",
     "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true"
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/marcschillinger/Documents/dev/dhbw/cpu-sim/src/main",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/exception" />
+      <recent name="$PROJECT_DIR$/src/main/java" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="cpu-sim.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">

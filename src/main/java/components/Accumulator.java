@@ -1,13 +1,13 @@
 package components;
 
 import components.logic.Command;
-import components.logic.OperationUnits;
+import components.units.Unit;
 import components.logic.Operator;
 
 public class Accumulator {
     private Operator[] operators;
     private Command command;
-    private OperationUnits[] operationUnits;
+    private Unit[] operationUnits;
 
     public Accumulator() {
 

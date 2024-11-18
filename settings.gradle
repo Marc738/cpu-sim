@@ -1,2 +1,6 @@
 rootProject.name = 'cpu-sim'
+include 'src:main:resources'
+findProject(':src:main:resources')?.name = 'resources'
+include 'src:main:java:exceptions'
+findProject(':src:main:java:exceptions')?.name = 'exceptions'
 
