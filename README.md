@@ -2,5 +2,5 @@
 
 > cpu-sim ist eine Javaanwendung, die eine CPU simuliert und bedienbar macht über das CLI.
 
-Finde die technische Dokumentation unter [Link](doc/)
+Finde die technische Dokumentation unter [Link](doc/main.pdf)
 
