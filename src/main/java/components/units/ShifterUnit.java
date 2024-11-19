@@ -1,13 +1,20 @@
 package components.units;
 
+import components.logic.Operation;
+import components.logic.OperatorResult;
+import components.operations.shifter.LeftShiftOperator;
+import components.operations.shifter.RightShiftOperator;
+import exceptions.NoMatchingOperatorException;
+
 public class ShifterUnit extends Unit {
 
     public ShifterUnit() {
-        super(Operation.SHIFTER_OPERATIONS);
+        super("Shifter", new LeftShiftOperator(), new RightShiftOperator());
     }
 
-    @Override
-    public byte process(byte opt1, byte opt2) {
-        return 0;
+    public OperatorResult process(Operation operation, byte opt1, byte opt2) throws NoMatchingOperatorException {
+        // todo: implement
+        throw new NoMatchingOperatorException(name, operation);
     }
+
 }

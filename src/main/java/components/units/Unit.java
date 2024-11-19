@@ -1,36 +1,32 @@
 package components.units;
 
+import components.logic.Operation;
+import components.logic.OperatorResult;
+import components.operations.Operator;
+import exceptions.NoMatchingOperatorException;
+
 public class Unit {
 
-    protected byte operationCode;
-    protected byte[] acceptedOperationCodes;
+    protected final String name;
 
-    public Unit(Operation[] acceptedOperations) {
-        initAcceptedOperationCodes(acceptedOperations);
+    protected Operator[] operators;
+
+    public Unit(String name, Operator...operators) {
+        this.name = name;
+        this.operators = operators;
     }
 
-    private void initAcceptedOperationCodes(Operation[] acceptedOperations) {
-        acceptedOperationCodes = new byte[acceptedOperations.length];
-        for(int i = 0; i < acceptedOperations.length; i++) {
-            acceptedOperationCodes[i] = acceptedOperations[i].getCode();
-        }
-    }
-
-    public boolean canProcessOperationCode(byte operationCode) {
-        for(byte code : acceptedOperationCodes) {
-            if(code == operationCode) {
+    public boolean canProcessOperation(Operation operation) {
+        for(Operator operator : operators) {
+            if(operator.canProcess(operation)) {
                 return true;
             }
         }
         return false;
     }
 
-    public void setOperationCode(byte operationCode) {
-        this.operationCode = operationCode;
-    }
-
-    public byte process(byte opt1, byte opt2) {
-        return 0;
+    public OperatorResult process(Operation operation, byte opt1, byte opt2) throws NoMatchingOperatorException {
+        throw new NoMatchingOperatorException(name, operation);
     }
 
 }
